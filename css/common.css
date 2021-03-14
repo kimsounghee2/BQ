@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+*{
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+html,body{margin: 0; padding: 0;}
+header, body, article, aside, main, nav, footer{display: block;}
+header:after, body:after, article:after, aside:after, main:after, nav:after, footer:after{display: block;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+/*headr_part*/
+header{position: fixed; width: 100%; height: 100px; background-color:#ffff; z-index:2; border-bottom: 1px solid #ccc;}
+header .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px; position: relative; }
+header .wrap .logo{position: absolute; left: 10px; top:50%; transform:translateY(-50%);}
+header .wrap .logo a{display: block;}
+header .wrap .logo a img{display: block; height: 44px; }
+
+
+header nav{text-align: center;}
+header nav ul{font-size: 0;}
+header nav ul li{display: inline-block; margin: 0 15px;}
+header nav ul li a{display: block; font-size: 12px; line-height: 90px; color:#323232; position: relative; text-transform: uppercase;}
+header nav ul li a:hover{
+    color:rosybrown;
+}
+
+header .wrap .sns{position: absolute; right:10px; top:50%; transform:translateY(-50%);}
+header .wrap .sns ul{font-size: 0;}
+header .wrap .sns ul li{display: inline-block; margin: 0 20px;}
+header .wrap .sns ul li:last-child{margin-right: 0;}
+header .wrap .sns ul li a{display: block; width: 20px; height: 20px; background-size: cover; background-position: 50% 50%; transition: background-image 0.5s;}
+header .wrap .sns ul .pu a{display: block; width: 14px; height: 20px; background-size: cover; background-position: 50% 50%; transition: background-image 0.5s;}
+
+
+header .wrap .sns ul li:nth-child(1) a{background-image: url(../img/icon_login_black.png);}
+header .wrap .sns ul li:nth-child(1) a:hover{background-image: url(../img/icon_login_hover.png);}
+header .wrap .sns ul li:nth-child(2) a{background-image: url(../img/icon-cart.png);}
+header .wrap .sns ul li:nth-child(2) a:hover{background-image: url(../img/icon-cart-hover.png);}
+
+
+
+
+/* footer */
+footer{
+    height: 280px;
+    background-color: #323232;
+}
+footer .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+footer .wrap .top{padding-bottom: 40px;}
+footer .wrap .top::after{
+    content: ""; display: block; clear: both;
+}
+footer .wrap .top .info{
+    float: left;
+    width: calc(100% / 12 * 8);
+    font-size: 0;
+}
+/* footer .wrap .top .info div{display: inline-block; vertical-align: top;} */
+
+
+/* footer .wrap .top .info{
+    width: calc(100% / 12 * 5);
+    font-size: 0;
+} */
+footer .wrap .top .info article{
+    display: inline-block;
+    width: 25%;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    /* background-color:brown; */
+    /* margin: 0 10px; */
+    vertical-align: top;
+    line-height: 40px;
+}
+footer .wrap .top .info article.logo{
+    height: 40px;
+    background-image: url(../img/logo_white.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin-right: 120px; */
+}
+
+/* footer .wrap .top .info article p{line-height: 2;} */
+footer .wrap .top .info article h4{
+    font-weight: bold;
+}
+
+footer .wrap .top .link{
+    float: right;
+    width: calc(100% / 12 * 3);
+    margin-top: 40px;
+}
+footer .wrap .top .link:after{
+    content: ""; display: block; clear: both;
+}
+
+footer .wrap .top .link ul{font-size: 0;}
+footer .wrap .top .link ul li{
+    display: inline-block;
+    width: calc((100% / 3) - 20px); height: 80px;
+    margin: 0 10px;
+}
+footer .wrap .top .link ul li a{
+    width: 100%; height: 100%;
+    display: block;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+footer .wrap .top .link ul li:nth-child(1) a{background-image: url(../img/info-img-001.jpg);}
+footer .wrap .top .link ul li:nth-child(2) a{background-image: url(../img/info-img-002.jpg);}
+footer .wrap .top .link ul li:nth-child(3) a{background-image: url(../img/info-img-004.jpg);}
+
+footer .wrap .copy{
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 14px;
+}
+
